@@ -7,6 +7,9 @@
 
 #import <Metal/Metal.h>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol MTIFunctionArgumentEncodingProxy <NSObject>
@@ -38,3 +41,6 @@ __attribute__((objc_subclassing_restricted))
 
 
 NS_ASSUME_NONNULL_END
+
+#pragma clang diagnostic pop
+
